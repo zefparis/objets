@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Objets Trouvés – Lost & Found App</title>
+  <link rel="icon" href="flags/fr.svg" type="image/svg+xml" />
   <style>
-    .lang h3 img {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-  border-radius: 3px;
-}
-
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -24,46 +17,6 @@
       color: white;
       padding: 2rem;
       text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .lang-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .lang {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      width: 250px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .lang h3 {
-      margin-top: 0;
-      color: #007BFF;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .features div {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f1f1f1;
     }
     .cta-button {
       display: inline-block;
@@ -79,87 +32,109 @@
     .cta-button:hover {
       background: #218838;
     }
-    img.hero {
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .hero {
       width: 100%;
       border-radius: 8px;
       margin-top: 1rem;
     }
-
-    @media(max-width: 768px) {
-      .features {
-        grid-template-columns: 1fr;
-      }
+    h2 {
+      margin-top: 2rem;
+      text-align: center;
+      color: #333;
+    }
+    .lang-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .lang {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .lang h3 {
+      margin-top: 0;
+      color: #007BFF;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lang img {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .features div {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Objets Trouvés / Lost & Found</h1>
-  <p>L'application intelligente pour retrouver ce que vous avez perdu</p>
-  <a href="https://lost-found-tracker-lecoinrdc.replit.app/" class="cta-button">Accéder à l'application</a>
-</header>
+  <header>
+    <h1>Objets Trouvés – Lost & Found App</h1>
+    <p>Développée en France 🇫🇷 pour simplifier la recherche d'objets perdus</p>
+    <a href="https://lost-found-tracker-lecoinrdc.replit.app/" class="cta-button">
+      Accéder à l'application
+    </a>
+  </header>
 
-<div class="container">
-  <img src="./lost-found.jpg" alt="Illustration objets trouvés" class="hero" />
+  <div class="container">
+    <img src="lost-found.jpg" alt="Illustration objets trouvés" class="hero" />
 
-  <h2>Disponible en 10 langues</h2>
-  <div class="lang-grid">
-  <div class="lang">
-    <h3><img src="./flags/fr.svg" alt="FR" /> Français</h3>
-    <p>Trouvez ou signalez facilement un objet perdu autour de vous.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/gb.svg" alt="EN" /> English</h3>
-    <p>Find or report lost items easily near your location.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/es.svg" alt="ES" /> Español</h3>
-    <p>Encuentra o informa objetos perdidos cerca de ti.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/pt.svg" alt="PT" /> Português</h3>
-    <p>Encontre ou denuncie itens perdidos com facilidade.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/de.svg" alt="DE" /> Deutsch</h3>
-    <p>Verlorene Gegenstände einfach melden oder finden.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/it.svg" alt="IT" /> Italiano</h3>
-    <p>Trova o segnala oggetti smarriti vicino a te.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/cn.svg" alt="CN" /> 中文</h3>
-    <p>轻松查找或报告丢失的物品。</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/kr.svg" alt="KR" /> 한국어</h3>
-    <p>분실물을 쉽게 찾거나 신고하세요.</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/jp.svg" alt="JP" /> 日本語</h3>
-    <p>落とし物を簡単に見つけたり報告したりできます。</p>
-  </div>
-  <div class="lang">
-    <h3><img src="./flags/nl.svg" alt="NL" /> Nederlands</h3>
-    <p>Vind of meld eenvoudig verloren voorwerpen.</p>
-  </div>
-</div>
+    <h2>Application multilingue</h2>
+    <div class="lang-grid">
+      <div class="lang"><h3><img src="flags/fr.svg" alt="FR">Français</h3><p>Signalez ou retrouvez facilement un objet perdu.</p></div>
+      <div class="lang"><h3><img src="flags/gb.svg" alt="EN">English</h3><p>Find or report lost items easily.</p></div>
+      <div class="lang"><h3><img src="flags/es.svg" alt="ES">Español</h3><p>Encuentra o reporta objetos perdidos.</p></div>
+      <div class="lang"><h3><img src="flags/pt.svg" alt="PT">Português</h3><p>Encontre ou comunique objetos perdidos.</p></div>
+      <div class="lang"><h3><img src="flags/de.svg" alt="DE">Deutsch</h3><p>Verlorene Gegenstände einfach melden oder finden.</p></div>
+      <div class="lang"><h3><img src="flags/it.svg" alt="IT">Italiano</h3><p>Segnala o trova oggetti smarriti facilmente.</p></div>
+      <div class="lang"><h3><img src="flags/cn.svg" alt="CN">中文</h3><p>查找或报告丢失的物品。</p></div>
+      <div class="lang"><h3><img src="flags/kr.svg" alt="KR">한국어</h3><p>분실물을 쉽게 찾거나 신고하세요.</p></div>
+      <div class="lang"><h3><img src="flags/jp.svg" alt="JP">日本語</h3><p>落とし物を簡単に見つけたり報告できます。</p></div>
+      <div class="lang"><h3><img src="flags/nl.svg" alt="NL">Nederlands</h3><p>Meld of vind eenvoudig verloren voorwerpen.</p></div>
+    </div>
 
-  <h2>Fonctionnalités de l'application</h2>
-  <div class="features">
-    <div><strong>📍 Carte interactive</strong><br/>Visualisez les objets perdus/trouvés en temps réel autour de vous.</div>
-    <div><strong>💬 Chat intégré</strong><br/>Contactez les personnes qui ont trouvé ou perdu un objet.</div>
-    <div><strong>🧭 Géolocalisation</strong><br/>Partage automatique de votre position pour faciliter les rencontres.</div>
-    <div><strong>🌐 Multilingue</strong><br/>Utilisable par tous, dans leur langue.</div>
+    <h2>Fonctionnalités principales</h2>
+    <div class="features">
+      <div><strong>📍 Carte interactive</strong><br/>Affichage des objets perdus/trouvés en temps réel.</div>
+      <div><strong>💬 Chat intégré</strong><br/>Messagerie pour contacter les personnes concernées.</div>
+      <div><strong>🧭 Géolocalisation</strong><br/>Position automatique pour une meilleure précision.</div>
+      <div><strong>🌐 Interface multilingue</strong><br/>Traduction automatique selon votre langue.</div>
+    </div>
   </div>
-</div>
 
-<footer>
-  Une application IA-Solution • Made in France<br/>
-  Développée avec ❤️ pour aider les citoyens à se reconnecter à leurs biens.
-</footer>
+  <footer>
+    Une solution IA-Solution • Made in France 🇫🇷<br/>
+    Conçue pour aider les citoyens à retrouver leurs objets perdus.
+  </footer>
 
 </body>
 </html>
