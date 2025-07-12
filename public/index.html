@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objets Trouvés – Lost & Found App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f5f5f5);
+      color: #333;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .lang-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .lang {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .lang h3 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .features div {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f1f1f1;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #218838;
+    }
+    img.hero {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    @media(max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Objets Trouvés / Lost & Found</h1>
+  <p>L'application intelligente pour retrouver ce que vous avez perdu</p>
+  <a href="https://lost-found-tracker-lecoinrdc.replit.app/" class="cta-button">Accéder à l'application</a>
+</header>
+
+<div class="container">
+  <img src="./lost-found.jpg" alt="Illustration objets trouvés" class="hero" />
+
+  <h2>Disponible en 10 langues</h2>
+  <div class="lang-grid">
+    <div class="lang"><h3>🇫🇷 Français</h3><p>Trouvez ou signalez facilement un objet perdu autour de vous.</p></div>
+    <div class="lang"><h3>🇬🇧 English</h3><p>Find or report lost items easily near your location.</p></div>
+    <div class="lang"><h3>🇪🇸 Español</h3><p>Encuentra o informa objetos perdidos cerca de ti.</p></div>
+    <div class="lang"><h3>🇵🇹 Português</h3><p>Encontre ou denuncie itens perdidos com facilidade.</p></div>
+    <div class="lang"><h3>🇩🇪 Deutsch</h3><p>Verlorene Gegenstände einfach melden oder finden.</p></div>
+    <div class="lang"><h3>🇮🇹 Italiano</h3><p>Trova o segnala oggetti smarriti vicino a te.</p></div>
+    <div class="lang"><h3>🇨🇳 中文</h3><p>轻松查找或报告丢失的物品。</p></div>
+    <div class="lang"><h3>🇰🇷 한국어</h3><p>분실물을 쉽게 찾거나 신고하세요.</p></div>
+    <div class="lang"><h3>🇯🇵 日本語</h3><p>落とし物を簡単に見つけたり報告したりできます。</p></div>
+    <div class="lang"><h3>🇳🇱 Nederlands</h3><p>Vind of meld eenvoudig verloren voorwerpen.</p></div>
+  </div>
+
+  <h2>Fonctionnalités de l'application</h2>
+  <div class="features">
+    <div><strong>📍 Carte interactive</strong><br/>Visualisez les objets perdus/trouvés en temps réel autour de vous.</div>
+    <div><strong>💬 Chat intégré</strong><br/>Contactez les personnes qui ont trouvé ou perdu un objet.</div>
+    <div><strong>🧭 Géolocalisation</strong><br/>Partage automatique de votre position pour faciliter les rencontres.</div>
+    <div><strong>🌐 Multilingue</strong><br/>Utilisable par tous, dans leur langue.</div>
+  </div>
+</div>
+
+<footer>
+  Une application IA-Solution • Made in RDC 🇨🇩<br/>
+  Développée avec ❤️ pour aider les citoyens à se reconnecter à leurs biens.
+</footer>
+
+</body>
+</html>
